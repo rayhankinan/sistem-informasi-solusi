@@ -7,7 +7,7 @@ services:
     ports:
       - 8070:8069
     volumes:
-      - ./variable:/var/lib/odoo
+      - odoo-web-data:/var/lib/odoo
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
     environment:
@@ -22,9 +22,12 @@ services:
       - POSTGRES_USER=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
-      - ./database:/var/lib/postgresql/data/pgdata
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
     secrets:
       - postgresql_password
+volumes:
+  odoo-web-data:
+  odoo-db-data:
 secrets:
   postgresql_password:
     file: odoo_pg_pass
