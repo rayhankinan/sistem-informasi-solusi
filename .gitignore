@@ -130,5 +130,4 @@ dmypy.json
 
 # Docker
 odoo_pg_pass
-/variable
-/config
+odoo.conf
