@@ -14,7 +14,7 @@ class Client(models.Model):
     logo = fields.Image(string="logo", required=True)
     phoneNumber = fields.Char(string="phoneNumber", required=True)
 
-    handledBy = fields.Many2one(
-        comodel_name="sis_module.employees", string="handledBy")
     uses = fields.One2many(comodel_name="sis_module.solutions",
                            inverse_name="usedBy", string="uses")
+
+    # Untuk mendapatkan UUID handler, dapat mengakses field create_uid
