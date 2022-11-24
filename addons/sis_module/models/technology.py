@@ -7,12 +7,12 @@ class Technology(models.Model):
     _name = "sis_module.technologies"
     _description = "Technologies"
 
-    name = fields.Char(string="name", required=True)
-    utility = fields.Text(string="utility", required=True)
-    logo = fields.Image(string="logo", required=True)
-    resource = fields.Binary(string="resource", required=True)
+    name = fields.Char(string="Name", required=True)
+    utility = fields.Text(string="Utility", required=True)
+    logo = fields.Image(string="Logo", required=True)
+    resource = fields.Binary(string="Resource", required=True)
 
     build = fields.Many2many(
-        comodel_name="sis_module.solutions", string="build")
+        comodel_name="sis_module.solutions", string="Build")
     hasRisk = fields.Many2many(
-        comodel_name="sis_module.vulnerabilities", string="hasRisk")
+        comodel_name="sis_module.vulnerabilities", string="Has Risk")
