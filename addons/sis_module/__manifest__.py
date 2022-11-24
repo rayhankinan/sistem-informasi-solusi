@@ -28,9 +28,9 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/form.xml',
         'views/menu.xml',
         'views/tree.xml',
+        'views/form.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
