@@ -1,6 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-sis_client_manager,SIS Client Manager,model_sis_client,,1,1,1,1
-sis_employee_manager,SIS Employee Manager,model_sis_employee,,1,1,1,1
-sis_solution_manager,SIS Solution Manager,model_sis_solution,,1,1,1,1
-sis_technology_manager,SIS Technology Manager,model_sis_technology,,1,1,1,1
-sis_vulnerability_manager,SIS Vulnerability Manager,model_sis_vulnerability,,1,1,1,1

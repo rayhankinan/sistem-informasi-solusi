@@ -4,7 +4,7 @@ from odoo import models, fields
 
 
 class Employee(models.Model):
-    _name = "sis-module.employees"
+    _name = "sis_module.employees"
     _description = "Employees"
 
     firstName = fields.Char(string="firstName", required=True)
@@ -15,7 +15,7 @@ class Employee(models.Model):
     phoneNumber = fields.Char(string="phoneNumber", required=True)
     email = fields.Char(string="email", required=True)
 
-    creates = fields.One2many(comodel_name="sis-module.solutions",
+    creates = fields.One2many(comodel_name="sis_module.solutions",
                               inverse_name="createdBy", string="creates")
     handles = fields.One2many(
-        comodel_name="sis-module.clients", inverse_name="handledBy", string="handles")
+        comodel_name="sis_module.clients", inverse_name="handledBy", string="handles")

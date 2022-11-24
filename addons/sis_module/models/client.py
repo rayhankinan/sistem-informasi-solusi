@@ -4,7 +4,7 @@ from odoo import models, fields
 
 
 class Client(models.Model):
-    _name = "sis-module.clients"
+    _name = "sis_module.clients"
     _description = "Clients"
 
     name = fields.Char(string="name", required=True)
@@ -15,6 +15,6 @@ class Client(models.Model):
     phoneNumber = fields.Char(string="phoneNumber", required=True)
 
     handledBy = fields.Many2one(
-        comodel_name="sis-module.employees", string="handledBy")
-    uses = fields.One2many(comodel_name="sis-module.solutions",
+        comodel_name="sis_module.employees", string="handledBy")
+    uses = fields.One2many(comodel_name="sis_module.solutions",
                            inverse_name="usedBy", string="uses")
