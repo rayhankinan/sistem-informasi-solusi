@@ -11,6 +11,7 @@
                     <field name="logo"/>
                     <field name="phoneNumber"/>
                     <field name="uses"/>
+                    <field name="create_uid"/>
                 </tree>
             </field>
         </record>
@@ -25,6 +26,7 @@
                     <field name="proposal"/>
                     <field name="usedBy"/>
                     <field name="builtWith"/>
+                    <field name="create_uid"/>
                 </tree>
             </field>
         </record>
