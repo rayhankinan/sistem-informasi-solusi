@@ -31,6 +31,8 @@
         'views/menu.xml',
         'views/tree.xml',
         'views/form.xml',
+        'views/search.xml',
+        # 'views/kanban.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

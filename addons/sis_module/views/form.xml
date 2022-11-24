@@ -98,7 +98,7 @@
                     <sheet>
                         <group>
                             <group>
-                                <field name="name"/>
+                                <field name="cveId"/>
                             </group>
                             <group>
                                 <field name="cvss"/>
