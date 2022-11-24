@@ -10,7 +10,7 @@ class Client(models.Model):
     name = fields.Char(string="name", required=True)
     outline = fields.Text(string="outline", required=True)
     industry = fields.Selection(
-        selection=["small/medium", "corporate", "enterprise"], string="industry", required=True)
+        selection=[("small/medium", "Small or Medium"), ("corporate", "Corporate"), ("enterprise", "Enterprise")], string="industry", required=True)
     logo = fields.Image(string="logo", required=True)
     phoneNumber = fields.Char(string="phoneNumber", required=True)
 
