@@ -15,6 +15,6 @@ class Client(models.Model):
     phoneNumber = fields.Char(string="phoneNumber", required=True)
 
     uses = fields.One2many(comodel_name="sis_module.solutions",
-                           inverse_name="usedBy", string="uses")
+                           inverse_name="usedBy", string="uses", required=True)
 
     # Untuk mendapatkan UUID handler, dapat mengakses field create_uid

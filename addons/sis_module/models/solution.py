@@ -12,8 +12,8 @@ class Solution(models.Model):
     proposal = fields.Binary(string="proposal", required=True)
 
     usedBy = fields.Many2one(
-        comodel_name="sis_module.clients", string="usedBy")
+        comodel_name="sis_module.clients", string="usedBy", required=True)
     builtWith = fields.Many2many(
-        comodel_name="sis_module.technologies", string="builtWith")
+        comodel_name="sis_module.technologies", string="builtWith", required=True)
 
     # Untuk mendapatkan UUID creator, dapat mengakses field create_uid

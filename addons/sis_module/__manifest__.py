@@ -28,7 +28,7 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/client.xml',
+        'views/sis-module.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
