@@ -32,7 +32,7 @@
         </record>
 
         <record id="sis_module.solution_form" model="ir.ui.view">
-            <field name="name">sis_module.solutions</field>
+            <field name="name">sis_module.solutions.form</field>
             <field name="model">sis_module.solutions</field>
             <field name="arch" type="xml">
                 <form>
