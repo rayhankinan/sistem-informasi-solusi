@@ -1,0 +1,62 @@
+<odoo>
+    <data>
+        <record id="sis_module.client_tree" model="ir.ui.view">
+            <field name="name">sis_module.clients.tree</field>
+            <field name="model">sis_module.clients</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="outline"/>
+                    <field name="industry"/>
+                    <field name="logo"/>
+                    <field name="phoneNumber"/>
+                    <field name="uses"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="sis_module.solution_tree" model="ir.ui.view">
+            <field name="name">sis_module.solutions.tree</field>
+            <field name="model">sis_module.solutions</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="proposal"/>
+                    <field name="usedBy"/>
+                    <field name="builtWith"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="sis_module.technology_tree" model="ir.ui.view">
+            <field name="name">sis_module.technologies.tree</field>
+            <field name="model">sis_module.technologies</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="utility"/>
+                    <field name="logo"/>
+                    <field name="resource"/>
+                    <field name="build"/>
+                    <field name="hasRisk"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="sis_module.vulnerability_tree" model="ir.ui.view">
+            <field name="name">sis_module.vulnerabilities.tree</field>
+            <field name="model">sis_module.vulnerabilities</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="cvss"/>
+                    <field name="summary"/>
+                    <field name="published"/>
+                    <field name="lastUpdated"/>
+                    <field name="risking"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
