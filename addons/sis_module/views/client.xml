@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+        <record id="sis_module.client_form" model="ir.ui.view">
+            <field name="name">sis_module.clients.form</field>
+            <field name="model">sis_module.clients</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="outline"/>
+                    <field name="industry"/>
+                    <field name="logo"/>
+                    <field name="phoneNumber"/>
+                    <field name="uses"/>
+                </tree>
+            </field>
+        </record>
+        <record id="sis_module.client_window" model="ir.actions.act_window">
+            <field name="name">sis_module.clients.window</field>
+            <field name="res_model">sis_module.clients</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="sis_module.client_server" model="ir.actions.server">
+            <field name="name">sis_module.clients.action</field>
+            <field name="model_id" ref="model_sis_module_clients"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = {
+                    "type": "ir.actions.act_window",
+                    "view_mode": "tree,form",
+                    "res_model": model._name,
+                }
+            </field>
+        </record>
+        <menuitem name="clients" id="sis_module.menu_root"/>
+        <menuitem name="Menu 1" id="sis_module.menu_1" parent="sis_module.menu_root"/>
+        <menuitem name="Menu 2" id="sis_module.menu_2" parent="sis_module.menu_root"/>
+        <menuitem name="List" id="sis_module.menu_1_list" parent="sis_module.menu_1" action="sis_module.client_window"/>
+        <menuitem name="Server to list" id="clients" parent="sis_module.menu_2" action="sis_module.client_server"/>
+    </data>
+</odoo>
