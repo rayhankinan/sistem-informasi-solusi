@@ -64,7 +64,7 @@
             <field name="model">sis_module.vulnerabilities</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="cveId"/>
+                    <field name="name"/>
                     <field name="cvss"/>
                     <field name="summary"/>
                     <field name="published"/>
