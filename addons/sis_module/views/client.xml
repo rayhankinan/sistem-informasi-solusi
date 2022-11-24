@@ -67,6 +67,7 @@
             <field name="model">sis_module.clients</field>
             <field name="arch" type="xml">
                 <kanban>
+                    <field name="id"/>
                     <field name="name"/>
                     <field name="outline"/>
                     <field name="industry"/>
@@ -78,7 +79,7 @@
                         <t t-name="kanban-box">
                             <div t-attf-class="oe_kanban_global_click">
                                 <div class="o_kanban_image">
-                                    <img alt="Avatar" t-att-src="kanban_image('res.users', 'image_128', record.logo.raw_value)" />
+                                    <img alt="Avatar" t-att-src="kanban_image('sis_module.clients', 'logo', record.id.raw_value)" />
                                 </div>
                                 <div class="o_kanban_details">
                                     <li>
