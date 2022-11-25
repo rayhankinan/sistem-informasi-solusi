@@ -10,7 +10,7 @@ class Technology(models.Model):
     name = fields.Char(string="Name", required=True)
     utility = fields.Text(string="Utility", required=True)
     logo = fields.Image(string="Logo", required=True)
-    resource = fields.Binary(string="Resource", required=True)
+    resource = fields.Char(string="Resource", required=True)
 
     build = fields.Many2many(
         comodel_name="sis_module.solutions", string="Build")
