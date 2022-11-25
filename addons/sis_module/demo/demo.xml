@@ -55,4 +55,13 @@
         <field name="logo" file="./images/GoogleDrive.png"/>
         <field name="resource" file="./resources/GoogleDrive.html"/>
     </record>
+    
+    <record id="technology_3" model="sis_module.technologies">
+        <field name="name">Google Slides</field>
+        <field name="utility">
+            Google Slides is a presentation program included as part of the free, web-based Google Docs Editors suite offered by Google. The service also includes: Google Docs, Google Sheets, Google Drawings, Google Forms, Google Sites and Google Keep. Google Slides is available as a web application, mobile app for: Android, iOS, Microsoft Windows, BlackBerry OS and as a desktop application on Google's ChromeOS. The app is compatible with Microsoft PowerPoint file formats. The app allows users to create and edit files online while collaborating with other users in real-time. Edits are tracked by a user with a revision history presenting changes. An editor's position is highlighted with an editor-specific color and cursor and a permissions system regulates what users can do. Updates have introduced features using machine learning, including "Explore", offering and "tasks to other users.
+        </field>
+        <field name="logo" file="./images/GoogleSlides.png"/>
+        <field name="resource" file="./resources/GoogleSlides.html"/>
+    </record>
 </odoo>
