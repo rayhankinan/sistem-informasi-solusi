@@ -33,7 +33,7 @@
         'views/solution.xml',
         'views/technology.xml',
         'views/vulnerability.xml',
-        'demo/demo.xml',
+        # 'demo/demo.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
