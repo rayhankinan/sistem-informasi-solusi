@@ -6,6 +6,7 @@ from odoo import models, fields
 class Solution(models.Model):
     _name = "sis_module.solutions"
     _description = "Solutions"
+    _rec_name = "name"
 
     name = fields.Char(string="Name", required=True)
     description = fields.Text(string="Description", required=True)

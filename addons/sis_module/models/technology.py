@@ -6,6 +6,7 @@ from odoo import models, fields
 class Technology(models.Model):
     _name = "sis_module.technologies"
     _description = "Technologies"
+    _rec_name = "name"
 
     name = fields.Char(string="Name", required=True)
     utility = fields.Text(string="Utility", required=True)

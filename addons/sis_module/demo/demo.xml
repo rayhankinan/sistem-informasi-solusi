@@ -13,7 +13,7 @@
             <field name="logo" type="base64" file="/mnt/extra-addons/sis_module/demo/images/GoogleDrive.png"/>
             <field name="resource">https://www.google.com/intl/en/drive/</field>
         </record>
-    
+
         <record id="technology_3" model="sis_module.technologies">
             <field name="name">Google Slides</field>
             <field name="utility"> Google Slides is a presentation program included as part of the free, web-based Google Docs Editors suite offered by Google. The service also includes: Google Docs, Google Sheets, Google Drawings, Google Forms, Google Sites and Google Keep. Google Slides is available as a web application, mobile app for: Android, iOS, Microsoft Windows, BlackBerry OS and as a desktop application on Google's ChromeOS. The app is compatible with Microsoft PowerPoint file formats. The app allows users to create and edit files online while collaborating with other users in real-time. Edits are tracked by a user with a revision history presenting changes. An editor's position is highlighted with an editor-specific color and cursor and a permissions system regulates what users can do.</field>
@@ -29,7 +29,7 @@
             <field name="lastUpdated">2022-11-25 05:15:00</field>
             <field name="risking" eval="[ref('sis_module.technology_1')]"/>
         </record>
-    
+
         <record id="vulnerability_2" model="sis_module.vulnerabilities">
             <field name="cveId">CVE-2021-20610</field>
             <field name="cvss">7.8</field>
@@ -38,7 +38,7 @@
             <field name="lastUpdated">2022-11-25 03:15:00</field>
             <field name="risking" eval="[ref('sis_module.technology_2')]"/>
         </record>
-    
+
         <record id="vulnerability_3" model="sis_module.vulnerabilities">
             <field name="cveId">CVE-2021-20611</field>
             <field name="cvss">7.8</field>
@@ -71,7 +71,7 @@
             <field name="logo" type="base64" file="/mnt/extra-addons/sis_module/demo/images/HappyFresh.png"/>
             <field name="phoneNumber">+62614571380 </field>
         </record>
-    
+
         <record id="solution_1" model="sis_module.solutions">
             <field name="name">Sistem Pencatatan Kehadiran Driver Gojek</field>
             <field name="description">Sistem informasi dengan menggunakan Google Sheets</field>
@@ -79,7 +79,7 @@
             <field name="usedBy" ref="sis_module.client_1"/>
             <field name="builtWith" eval="[ref('sis_module.technology_1')]"/>
         </record>
-    
+
         <record id="solution_2" model="sis_module.solutions">
             <field name="name">Sistem Pencatatan Kehadiran Driver Grab</field>
             <field name="description">Sistem informasi dengan menggunakan Google Sheets</field>
@@ -87,7 +87,7 @@
             <field name="usedBy" ref="sis_module.client_2"/>
             <field name="builtWith" eval="[ref('sis_module.technology_1')]"/>
         </record>
-    
+
         <record id="solution_3" model="sis_module.solutions">
             <field name="name">Sistem Pencatatan Tiket Pesawat</field>
             <field name="description">Sistem informasi dengan menggunakan Google Sheets dan Google Drive</field>

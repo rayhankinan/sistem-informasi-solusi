@@ -6,6 +6,7 @@ from odoo import models, fields
 class Client(models.Model):
     _name = "sis_module.clients"
     _description = "Clients"
+    _rec_name = "name"
 
     name = fields.Char(string="Name", required=True)
     outline = fields.Text(string="Outline", required=True)
